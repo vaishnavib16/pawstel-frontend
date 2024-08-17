@@ -4,7 +4,7 @@ import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'
 
 import './hero17.css'
-
+//hello
 const Hero17 = (props) => {
   return (
     <div className="hero17-header78">
