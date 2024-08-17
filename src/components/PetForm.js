@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import './PetForm.css'
+import React, { useState } from 'react';
+import './PetForm.css';
 import axios from 'axios';
 
 const PetForm = () => {
@@ -7,7 +7,7 @@ const PetForm = () => {
         petName: '',
         category: '',
         age: '',
-        Id: '',
+        id: '',
     });
 
     const [loading, setLoading] = useState(false);
@@ -49,7 +49,6 @@ const PetForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Clear previous messages and validate form
         setSuccessMessage('');
         setErrors({});
         const formErrors = validate();
@@ -57,16 +56,14 @@ const PetForm = () => {
         if (formErrors) {
             setLoading(true);
             try {
-                const url = 'http://localhost:7070/pets'; // Replace with your API URL
+                const url = 'http://localhost:7070/pets';
                 const response = await axios.post(url, formData, {
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('token')}`,
                         'Content-Type': 'application/json'
                     }
-                }
-                );
+                });
                 setSuccessMessage('Submission successful!');
-                // Optionally handle the response here
                 setFormData({
                     petName: '',
                     category: '',
@@ -89,10 +86,14 @@ const PetForm = () => {
 
     return (
         <>
-            {successMessage && successMessage}
-            {errors && errors.submit}
-            {loading && <>Loading.......</>}
+        <div className="title-name" style={{color:  '#F7418F'}}>
+                    <h1 class="form-title">Add your pet information</h1>
+                </div>
+            {successMessage && <div className="success-message">{successMessage}</div>}
+            {errors.submit && <div className="error-message">{errors.submit}</div>}
+            {loading && <div>Loading.......</div>}
             {!loading && <form onSubmit={handleSubmit} className="pet-form">
+                
                 <div className="form-group">
                     <label>Pet Name:</label>
                     <input
@@ -142,8 +143,7 @@ const PetForm = () => {
                 </div>
 
                 <button type="submit" className="submit-btn">Submit</button>
-            </form>
-            }
+            </form>}
         </>
     );
 };

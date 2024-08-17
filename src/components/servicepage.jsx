@@ -61,17 +61,17 @@ const styles = {
     padding: '20px', // Add padding to give some space around the content
   },
   backButton: {
-    backgroundColor: '#FC819E',
-    color: '#FFF',
-    padding: '10px 20px',
-    border: 'none',
-    borderRadius: '4px',
-    cursor: 'pointer',
-    fontSize: '1rem',
-    transition: 'background-color 0.3s',
-    position: 'absolute',
-    left: '20px',
-    zIndex: 10, // Ensure the button stays on top of the content
+    backgroundColor: '#FC819E !important',
+    color: '#FFF !important',
+    padding: '10px 20px !important' ,
+    border: 'none !important',
+    borderRadius: '4px !important',
+    cursor: 'pointer !important',
+    fontSize: '1rem !important',
+    transition: 'background-color 0.3s !important',
+    position: 'absolute !important',
+    left: '20px !important',
+    zIndex: 10  , // Ensure the button stays on top of the content
   },
   serviceContainer: {
     backgroundColor: '#FFF', // A clean, white background for the content

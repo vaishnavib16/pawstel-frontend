@@ -20,8 +20,8 @@ const BookingForm = () => {
         'GROOMING',
         'SPA',
         'HAIRCUT',
-        'DOG WALKING',
-        'HOSTEL BOOKING'
+        'DOG_WALKING',
+        'HOSTEL_BOOKING'
     ];
 
     // Validate form fields
@@ -92,6 +92,9 @@ const BookingForm = () => {
 
     return (
         <>
+        <div className="title-name" style={{color:  '#F7418F'}}>
+                    <h1 class="form-title">Add A Booking For Your Pet</h1>
+                </div>
             {successMessage && successMessage}
             {errors && errors.submit}
             {loading && <>Loading.......</>}
