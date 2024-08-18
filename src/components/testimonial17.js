@@ -1,7 +1,10 @@
 import React, { Fragment } from 'react'
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types'
-
+import dogWalking from '../images/dogWalking.jpeg'
+import grooming from '../images/catBrushing.jpg'
+import haircut from '../images/dogHairCut.jpg'
+import spa from'../images/catSpaRest.jpeg'
 import './testimonial17.css'
 
 const Testimonial17 = (props) => {
@@ -46,7 +49,7 @@ const Testimonial17 = (props) => {
                 <div className="testimonial17-container02">
                   <img
                     alt={props.author1Alt}
-                    src={props.author1Src}
+                    src={grooming}
                     className="testimonial17-image"
                   />
                   <div className="testimonial17-container03">
@@ -91,8 +94,8 @@ const Testimonial17 = (props) => {
               >
                 <div className="testimonial17-container04">
                   <img
-                    alt={props.author2Alt}
-                    src={props.author2Src}
+                    alt={spa}
+                    src={spa}
                     className="testimonial17-image1"
                   />
                   <div className="testimonial17-container05">
@@ -140,7 +143,7 @@ const Testimonial17 = (props) => {
                 <div className="testimonial17-container06">
                   <img
                     alt={props.author3Alt}
-                    src={props.author3Src}
+                    src={haircut}
                     className="testimonial17-image2"
                   />
                   <div className="testimonial17-container07">
@@ -188,7 +191,7 @@ const Testimonial17 = (props) => {
                 <div className="testimonial17-container08">
                   <img
                     alt={props.author4Alt}
-                    src={props.author4Src}
+                    src={dogWalking}
                     className="testimonial17-image3"
                   />
                   <div className="testimonial17-container09">

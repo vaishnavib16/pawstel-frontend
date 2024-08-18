@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-
+import pawstelLogo from '../images/finalLogo.png'
 import PropTypes from 'prop-types'
 
 import './footer4.css'
@@ -12,7 +12,7 @@ const Footer4 = (props) => {
           <div className="footer4-logo">
             <img
               alt={props.logoAlt}
-              src={props.logoSrc}
+              src={pawstelLogo}
               className="footer4-logo1"
             />
           </div>
@@ -56,7 +56,7 @@ const Footer4 = (props) => {
                 </Fragment>
               )}
             </a>
-            <a
+            {/* <a
               href="https://example.com"
               target="_blank"
               rel="noreferrer noopener"
@@ -79,14 +79,14 @@ const Footer4 = (props) => {
                   <span className="footer4-text10 thq-body-small">Blog</span>
                 </Fragment>
               )}
-            </a>
+            </a> */}
           </div>
         </div>
         <div className="footer4-credits">
           <div className="thq-divider-horizontal"></div>
           <div className="footer4-row">
             <div className="footer4-container">
-              <span className="thq-body-small">© 2024 TeleportHQ</span>
+              <span className="thq-body-small">© 2024 Pawstel</span>
             </div>
             <div className="footer4-footer-links">
               <span>
@@ -126,13 +126,13 @@ const Footer4 = (props) => {
 
 Footer4.defaultProps = {
   link1: undefined,
-  logoSrc: 'https://presentation-website-assets.teleporthq.io/logos/logo.png',
+  logoSrc: pawstelLogo,
   termsLink: undefined,
   link3: undefined,
   link2: undefined,
   cookiesLink: undefined,
   privacyLink: undefined,
-  logoAlt: 'Fitness Gym Logo',
+  logoAlt: 'Pawstel',
   link5: undefined,
   link4: undefined,
 }

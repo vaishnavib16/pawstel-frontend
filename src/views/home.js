@@ -95,7 +95,7 @@ const Home = (props) => {
       <Hero17
         action1={
           <Fragment>
-            <span className="home-text014 thq-body-small">Get Started</span>
+            <span className="home-text014 thq-body-small">Login</span>
           </Fragment>
         }
         // action2={
@@ -552,45 +552,42 @@ const Home = (props) => {
       <Steps2
         step1Title={
           <Fragment>
-            <h2 className="home-text086 thq-heading-2">Initial Consultation</h2>
+            <h2 className="home-text086 thq-heading-2">Emily Rivers</h2>
           </Fragment>
         }
         step2Title={
           <Fragment>
-            <h2 className="home-text087 thq-heading-2">Membership Options</h2>
+            <h2 className="home-text087 thq-heading-2"> Sophia Bennett</h2>
           </Fragment>
         }
         step3Title={
           <Fragment>
-            <h2 className="home-text088 thq-heading-2">Fitness Classes</h2>
+            <h2 className="home-text088 thq-heading-2"> Jake Matthews</h2>
           </Fragment>
         }
-        step4Title={
-          <Fragment>
-            <h2 className="home-text089 thq-heading-2">Nutrition Guidance</h2>
-          </Fragment>
-        }
+       
+        
         step1Description={
           <Fragment>
             <span className="home-text090 thq-body-small">
-              Schedule a free initial consultation to discuss your fitness goals
-              and create a personalized workout plan.
+            Emily is a compassionate pet care specialist at our daycare hostel, dedicated to providing personalized attention and love to every furry guest.
+                     With a gentle approach and years of experience, she ensures each pet feels safe, happy, and at home.
             </span>
           </Fragment>
         }
         step2Description={
           <Fragment>
             <span className="home-text091 thq-body-small">
-              Choose from a variety of membership options that fit your schedule
-              and budget, including individual or group sessions.
+            Sophia is a skilled pet grooming expert at our daycare hostel, known for her meticulous care and gentle handling.
+                     She transforms every pet's grooming session into a soothing experience, leaving them looking and feeling their best.
             </span>
           </Fragment>
         }
         step3Description={
           <Fragment>
             <span className="home-text092 thq-body-small">
-              Join our fitness classes led by experienced trainers to stay
-              motivated and reach your fitness goals.
+            Jake is an energetic pet walker at our daycare hostel, passionate about keeping pets active and happy.
+                    With his friendly demeanor and love for the outdoors, he ensures every walk is a fun and engaging adventure for your furry friends.
             </span>
           </Fragment>
         }
@@ -702,41 +699,39 @@ const Home = (props) => {
         content1={
           <Fragment>
             <p className="home-text108 thq-body-large">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in ero.
+              
             </p>
           </Fragment>
         }
-        heading1={
-          <Fragment>
-            <h2 className="home-text109 thq-heading-2">Contact Us</h2>
-          </Fragment>
-        }
-        location1={
-          <Fragment>
-            <h3 className="home-text110 thq-heading-3">Main Gym Location</h3>
-          </Fragment>
-        }
-        location2={
-          <Fragment>
-            <h3 className="home-text111 thq-heading-3">Online</h3>
-          </Fragment>
-        }
-        location1Description={
-          <Fragment>
-            <p className="home-text112 thq-body-large">
-              Visit us at our main gym location for a tour and consultation.
-            </p>
-          </Fragment>
-        }
-        location2Description={
-          <Fragment>
-            <p className="home-text113 thq-body-large">
-              Reach out to us online for inquiries about memberships and
-              services.
-            </p>
-          </Fragment>
-        }
+        // heading1={
+        //   <Fragment>
+        //     <h2 className="home-text109 thq-heading-2">Contact Us</h2>
+        //   </Fragment>
+        // }
+        // location1={
+        //   <Fragment>
+        //     <h3 className="home-text110 thq-heading-3">Hostel Locatin</h3>
+        //   </Fragment>
+        // }
+        // location2={
+        //   <Fragment>
+        //     <h3 className="home-text111 thq-heading-3">Online</h3>
+        //   </Fragment>
+        // }
+        // location1Description={
+        //   <Fragment>
+        //     <p className="home-text112 thq-body-large">
+        //       Visit us .
+        //     </p>
+        //   </Fragment>
+        // }
+        // location2Description={
+        //   <Fragment>
+        //     <p className="home-text113 thq-body-large">
+              
+        //     </p>
+        //   </Fragment>
+        // }
       ></Contact10>
       <Footer4
         link1={
@@ -754,16 +749,16 @@ const Home = (props) => {
             <span className="home-text116 thq-body-small">Contact Us</span>
           </Fragment>
         }
-        link4={
-          <Fragment>
-            <span className="home-text117 thq-body-small">Membership</span>
-          </Fragment>
-        }
-        link5={
-          <Fragment>
-            <span className="home-text118 thq-body-small">Blog</span>
-          </Fragment>
-        }
+        // link4={
+        //   <Fragment>
+        //     <span className="home-text117 thq-body-small">Membership</span>
+        //   </Fragment>
+        // }
+        // link5={
+        //   <Fragment>
+        //     <span className="home-text118 thq-body-small">Blog</span>
+        //   </Fragment>
+        // }
         termsLink={
           <Fragment>
             <span className="home-text119 thq-body-small">

@@ -21,15 +21,14 @@ const Contact10 = (props) => {
               {props.content1 ?? (
                 <Fragment>
                   <p className="contact10-text08 thq-body-large">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Suspendisse varius enim in ero.
+                   Near AKurdi Railway Station
                   </p>
                 </Fragment>
               )}
             </p>
           </div>
         </div>
-        <div className="contact10-content2 thq-flex-row">
+        {/* <div className="contact10-content2 thq-flex-row">
           <div className="contact10-container1">
             <img
               alt={props.location1ImageAlt}
@@ -100,7 +99,7 @@ const Contact10 = (props) => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

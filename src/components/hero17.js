@@ -2,7 +2,27 @@ import React, { Fragment } from 'react'
 
 import Script from 'dangerous-html/react'
 import PropTypes from 'prop-types'
-
+import dogImage from '../images/dog1.jpg'
+import dogimg2 from '../images/dog2.jpg'
+import dogs from '../images/GroupOfDogs.jpg'
+import catNDog from '../images/catNDog.jpg'
+import happyDog from '../images/happyDog.jpg'
+import catBrushing from '../images/catBrushing.jpg'
+import cutieCat from '../images/cutieCat.jpeg'
+import playingDogs from '../images/playingDogs.jpeg'
+import SwimmingDogs from '../images/swimmingDog.jpeg'
+import treatShop from '../images/treatShop.jpeg'
+import playingDog from '../images/PlayingDod.jpeg'
+import spaDog from '../images/spaDog.jpg'
+import playGround from '../images/playGround.jpeg'
+import bathingDog from '../images/bathingDog.jpg'
+import swimmingPool from '../images/swimmingPool.jpeg'
+import cuteDogs from '../images/CuteDogs.jpeg'
+import bubbleBath from '../images/bubbleBath.jpeg'
+import dirtyDog from '../images/dirtyDogWash.jpeg'
+import dogHairCut from '../images/dogHairCut.jpg'
+import backyard from '../images/backyard.jpeg'
+import lightingCages from '../images/lightingCages.jpeg'
 import './hero17.css'
 //hello
 const Hero17 = (props) => {
@@ -38,13 +58,13 @@ const Hero17 = (props) => {
               {props.action1 ?? (
                 <Fragment>
                   <span className="hero17-text6 thq-body-small">
-                    Get Started
+                    Login
                   </span>
                 </Fragment>
               )}
             </span>
           </button>
-          <button className="thq-button-outline hero17-button1">
+          {/* <button className="thq-button-outline hero17-button1">
             <span>
               {props.action2 ?? (
                 <Fragment>
@@ -54,7 +74,7 @@ const Hero17 = (props) => {
                 </Fragment>
               )}
             </span>
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="hero17-content1">
@@ -62,59 +82,59 @@ const Hero17 = (props) => {
           <div className="thq-animated-group-horizontal">
             <img
               alt={props.image1Alt}
-              src={props.image1Src}
+              src={dogImage}
               className="hero17-placeholder-image thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image2Alt}
-              src={props.image2Src}
+              src={dogimg2}
               className="hero17-placeholder-image01 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image3Alt}
-              src={props.image3Src}
+              src={catNDog}
               className="hero17-placeholder-image02 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image4Alt}
-              src={props.image4Src}
+              src={catBrushing}
               className="hero17-placeholder-image03 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image5Alt}
-              src={props.image5Src}
+              src={cutieCat}
               className="hero17-placeholder-image04 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image6Alt}
-              src={props.image6Src}
+              src={happyDog}
               className="hero17-placeholder-image05 thq-img-scale thq-img-ratio-1-1"
             />
           </div>
           <div className="thq-animated-group-horizontal">
             <img
               alt={props.image1Alt}
-              src={props.image1Src}
+              src={SwimmingDogs}
               className="hero17-placeholder-image06 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image2Alt}
-              src={props.image2Src}
+              src={treatShop}
               className="hero17-placeholder-image07 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image3Alt}
-              src={props.image3Src}
+              src={playingDogs}
               className="hero17-placeholder-image08 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image4Alt}
-              src={props.image4Src}
+              src={cuteDogs}
               className="hero17-placeholder-image09 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image5Alt}
-              src={props.image5Src}
+              src={swimmingPool}
               className="hero17-placeholder-image10 thq-img-scale thq-img-ratio-1-1"
             />
             <img
@@ -128,64 +148,64 @@ const Hero17 = (props) => {
           <div className="thq-animated-group-horizontal-reverse">
             <img
               alt={props.image7Alt}
-              src={props.image7Src}
+              src={bathingDog }
               className="hero17-placeholder-image12 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image8Alt}
-              src={props.image8Src}
+              src={spaDog}
               className="hero17-placeholder-image13 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image9Alt}
-              src={props.image9Src}
+              src={playingDog}
               className="hero17-placeholder-image14 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image10Alt}
-              src={props.image10Src}
+              src={playGround}
               className="hero17-placeholder-image15 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image11Alt}
-              src={props.image11Src}
+              src={backyard}
               className="hero17-placeholder-image16 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image12Alt}
-              src={props.image12Src}
+              src={dogHairCut}
               className="hero17-placeholder-image17 thq-img-scale thq-img-ratio-1-1"
             />
           </div>
           <div className="thq-animated-group-horizontal-reverse">
             <img
               alt={props.image7Alt}
-              src={props.image7Src}
+              src={dirtyDog }
               className="hero17-placeholder-image18 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image8Alt}
-              src={props.image8Src}
+              src={dogs}
               className="hero17-placeholder-image19 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image9Alt}
-              src={props.image9Src}
+              src={catNDog}
               className="hero17-placeholder-image20 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image10Alt}
-              src={props.image10Src}
+              src={bubbleBath}
               className="hero17-placeholder-image21 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt={props.image11Alt}
-              src={props.image11Src}
+              src={SwimmingDogs}
               className="hero17-placeholder-image22 thq-img-scale thq-img-ratio-1-1"
             />
             <img
               alt="Hero Image"
-              src="https://images.unsplash.com/photo-1568214379698-8aeb8c6c6ac8?ixid=M3w5MTMyMXwwfDF8c2VhcmNofDEyfHxncmFmaWN8ZW58MHx8fHwxNzE1Nzk0OTk5fDA&amp;ixlib=rb-4.0.3&amp;w=1500"
+              src=""
               className="hero17-placeholder-image23 thq-img-scale thq-img-ratio-1-1"
             />
           </div>
@@ -223,21 +243,21 @@ const Hero17 = (props) => {
 
 Hero17.defaultProps = {
   image12Src:
-    'https://images.unsplash.com/photo-1536922246289-88c42f957773?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMjcwODE0N3w&ixlib=rb-4.0.3&q=80&w=1080',
-  image4Alt: 'Diverse group of people working out together',
+    lightingCages,
+  image4Alt: 'group of dogs went for walk ',
   image4Src:
-    'https://images.unsplash.com/photo-1606738157849-bf12a05454f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMjcwODE0OXw&ixlib=rb-4.0.3&q=80&w=1080',
-  image8Alt: 'Yoga class in a serene setting',
+    'https://github.com/Anushkajain01/Project-resources/blob/main/image-400x400%20(5).jpg-bf12a05454f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMjcwODE0OXw&ixlib=rb-4.0.3&q=80&w=1080',
+  image8Alt: 'bathing dog',
   image6Src:
-    'https://images.unsplash.com/photo-1721329567449-b4ed38b849da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMjcwODE0Nnw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://images.unsplash.com/photo-https://github.com/Anushkajain01/Project-resources/blob/main/image-400x400%20(4).jpg-b4ed38b849da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMjcwODE0Nnw&ixlib=rb-4.0.3&q=80&w=1080',
   image9Src:
-    'https://images.unsplash.com/photo-1709985532763-0d2ada8e71f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMjcwODE0N3w&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://images.unsplash.com/photo-https://github.com/Anushkajain01/Project-resources/blob/main/image-400x400%20(7).jpg-0d2ada8e71f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMjcwODE0N3w&ixlib=rb-4.0.3&q=80&w=1080',
   image8Src:
-    'https://images.unsplash.com/photo-1514514757092-71ebbc3db4e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMjcwODE0OHw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://images.unsplash.com/https://github.com/Anushkajain01/Project-resources/blob/main/image-400x400%20(3).jpg-1514514757092-71ebbc3db4e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMjcwODE0OHw&ixlib=rb-4.0.3&q=80&w=1080',
   content1: undefined,
   image11Alt: 'High-intensity interval training (HIIT) session',
   image3Src:
-    'https://images.unsplash.com/photo-1578762560042-46ad127c95ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMjcwODE0NXw&ixlib=rb-4.0.3&q=80&w=1080',
+    'https://images.unsplash.https://github.com/Anushkajain01/Project-resources/blob/main/image-400x400%20(6).jpg/photo-1578762560042-46ad127c95ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMjcwODE0NXw&ixlib=rb-4.0.3&q=80&w=1080',
   image2Alt: 'Group fitness class in session',
   image12Alt: 'Relaxing post-workout stretch',
   image7Alt: 'Weightlifting session in progress',

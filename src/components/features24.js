@@ -1,7 +1,9 @@
 import React, { useState, Fragment } from 'react'
 
 import PropTypes from 'prop-types'
-
+import lightingCage from '../images/lightingCages.jpeg'
+import playingGround from '../images/playGround.jpeg'
+import guyHug from '../images/guyHuggingDog.jpg'
 import './features24.css'
 
 const Features24 = (props) => {
@@ -13,21 +15,21 @@ const Features24 = (props) => {
           {activeTab === 0 && (
             <img
               alt={props.feature1ImgAlt}
-              src={props.feature1ImgSrc}
+              src={lightingCage}
               className="features24-image thq-img-ratio-16-9"
             />
           )}
           {activeTab === 1 && (
             <img
               alt={props.feature2ImgAlt}
-              src={props.feature2ImgSrc}
+              src={guyHug}
               className="features24-image1 thq-img-ratio-16-9"
             />
           )}
           {activeTab === 2 && (
             <img
               alt={props.feature3ImgAlt}
-              src={props.feature3ImgSrc}
+              src={playingGround}
               className="features24-image2 thq-img-ratio-16-9"
             />
           )}

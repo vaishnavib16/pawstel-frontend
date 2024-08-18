@@ -11,18 +11,15 @@ const Steps2 = (props) => {
         <div className="steps2-container1 thq-grid-2">
           <div className="steps2-section-header">
             <h2 className="thq-heading-2">
-              Discover the Power of Our Products
+              Our Staff Members
             </h2>
             <p className="thq-body-large">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat.
+              
             </p>
             <div className="steps2-actions">
-              <button className="thq-button-animated thq-button-filled steps2-button">
+              {/* <button className="thq-button-animated thq-button-filled steps2-button">
                 <span className="thq-body-small">Main action</span>
-              </button>
+              </button> */}
             </div>
           </div>
           <div className="steps2-container2">
@@ -31,7 +28,7 @@ const Steps2 = (props) => {
                 {props.step1Title ?? (
                   <Fragment>
                     <h2 className="steps2-text17 thq-heading-2">
-                      Initial Consultation
+                    Emily Rivers
                     </h2>
                   </Fragment>
                 )}
@@ -40,8 +37,8 @@ const Steps2 = (props) => {
                 {props.step1Description ?? (
                   <Fragment>
                     <span className="steps2-text21 thq-body-small">
-                      Schedule a free initial consultation to discuss your
-                      fitness goals and create a personalized workout plan.
+                    Emily is a compassionate pet care specialist at our daycare hostel, dedicated to providing personalized attention and love to every furry guest.
+                     With a gentle approach and years of experience, she ensures each pet feels safe, happy, and at home.
                     </span>
                   </Fragment>
                 )}
@@ -53,7 +50,7 @@ const Steps2 = (props) => {
                 {props.step2Title ?? (
                   <Fragment>
                     <h2 className="steps2-text20 thq-heading-2">
-                      Membership Options
+                    Sophia Bennett
                     </h2>
                   </Fragment>
                 )}
@@ -62,9 +59,8 @@ const Steps2 = (props) => {
                 {props.step2Description ?? (
                   <Fragment>
                     <span className="steps2-text16 thq-body-small">
-                      Choose from a variety of membership options that fit your
-                      schedule and budget, including individual or group
-                      sessions.
+                    Sophia is a skilled pet grooming expert at our daycare hostel, known for her meticulous care and gentle handling.
+                     She transforms every pet's grooming session into a soothing experience, leaving them looking and feeling their best.
                     </span>
                   </Fragment>
                 )}
@@ -76,7 +72,7 @@ const Steps2 = (props) => {
                 {props.step3Title ?? (
                   <Fragment>
                     <h2 className="steps2-text15 thq-heading-2">
-                      Fitness Classes
+                    Jake Matthews
                     </h2>
                   </Fragment>
                 )}
@@ -85,15 +81,15 @@ const Steps2 = (props) => {
                 {props.step3Description ?? (
                   <Fragment>
                     <span className="steps2-text18 thq-body-small">
-                      Join our fitness classes led by experienced trainers to
-                      stay motivated and reach your fitness goals.
+                    Jake is an energetic pet walker at our daycare hostel, passionate about keeping pets active and happy.
+                    With his friendly demeanor and love for the outdoors, he ensures every walk is a fun and engaging adventure for your furry friends.
                     </span>
                   </Fragment>
                 )}
               </span>
               <label className="steps2-text11 thq-heading-3">03</label>
             </div>
-            <div className="steps2-container6 thq-card">
+            {/* <div className="steps2-container6 thq-card">
               <h2>
                 {props.step4Title ?? (
                   <Fragment>
@@ -114,7 +110,7 @@ const Steps2 = (props) => {
                 )}
               </span>
               <label className="steps2-text14 thq-heading-3">04</label>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -1,7 +1,8 @@
 import React, { useState, Fragment } from 'react'
 
 import PropTypes from 'prop-types'
-import images123 from '../images/pawstel-logo.jpeg'
+import images123 from '../images/finalLogo.png'
+import dogImage from '../images/dog1.jpg'
 import './navbar8.css'
 
 import { useHistory } from 'react-router-dom'
@@ -517,8 +518,7 @@ Navbar8.defaultProps = {
   page2: undefined,
   link1: undefined,
   page2ImageAlt: 'image',
-  page1ImageSrc:
-    'https://images.unsplash.com/photo-1532029837206-abbe2b7620e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyMjcwODE0NXw&ixlib=rb-4.0.3&q=80&w=1080',
+  page1ImageSrc: dogImage,
   page2Description: undefined,
   link2: undefined,
   action1: undefined,
@@ -527,8 +527,7 @@ Navbar8.defaultProps = {
   logoAlt: 'Gym Logo',
   link3: undefined,
   page1Description: undefined,
-  logoSrc:
-    'https://plus.unsplash.com/premium_photo-1677545183884-421157b2da02?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+  logoSrc: images123,
   link1Url: 'http://localhost:3000',
   linkUrlPage1: 'link to Home page',
   link4: undefined,

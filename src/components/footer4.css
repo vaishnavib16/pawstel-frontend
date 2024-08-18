@@ -29,7 +29,7 @@
   flex-direction: column;
 }
 .footer4-logo1 {
-  height: 2rem;
+  height: 5rem;
 }
 .footer4-links {
   gap: var(--dl-space-space-twounits);
