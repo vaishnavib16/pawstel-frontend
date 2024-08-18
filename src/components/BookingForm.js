@@ -98,7 +98,7 @@ const BookingForm = () => {
             {successMessage && successMessage}
             {errors && errors.submit}
             {loading && <>Loading.......</>}
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="booking-form">
                 <div>
                     <label htmlFor="startDate">Start Date:</label>
                     <input

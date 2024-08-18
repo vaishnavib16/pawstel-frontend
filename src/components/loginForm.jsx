@@ -99,10 +99,15 @@ const styles = {
     backgroundColor: "#FFF3C7",
   },
   form: {
+
     backgroundColor: "#FEC7B4",
     padding: "20px",
     borderRadius: "8px",
     boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.1)",
+    width: "100%",
+    maxWidth: "500px"
+
+    
   },
   title: {
     textAlign: "center",
@@ -133,6 +138,8 @@ const styles = {
     cursor: "pointer",
     marginTop: "10px",
   },
+
+  
   signUpButton: {
     width: "100%",
     padding: "10px",
@@ -142,12 +149,16 @@ const styles = {
     borderRadius: "4px",
     cursor: "pointer",
     marginTop: "10px",
+    
   },
+
+  
   error: {
     color: "red",
     fontSize: "12px",
     marginTop: "5px",
   },
+  
 };
 
 export default LoginForm;

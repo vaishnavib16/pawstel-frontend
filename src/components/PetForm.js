@@ -15,8 +15,7 @@ const PetForm = () => {
     const [errors, setErrors] = useState({});
 
     useEffect(( )=> {
- 
-        
+
         let user=JSON.parse(localStorage.getItem('user'))
         setFormData({id:user.id})
 
@@ -147,6 +146,7 @@ const PetForm = () => {
                         value={formData.id}
                         onChange={handleChange}
                         className={errors.id ? 'input-error' : ''}
+                        disabled
                     />
                     {errors.id && <span className="error">{errors.id}</span>}
                 </div>

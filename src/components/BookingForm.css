@@ -9,7 +9,7 @@
   }
 
 
-form {
+.booking-form {
     
     margin: 0 auto;
     padding: 20px;
@@ -62,7 +62,7 @@ form {
   
   /* Responsive adjustments */
   @media (max-width: 600px) {
-    form {
+    .booking-form {
       /*width: 100%; /* Full width on smaller screens */
       padding: 15px; /* Adjusted padding for better fit */
     }

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import serviceData from '../components/servicedata.json';
 import Navbar8 from './navbar8';
-import grooming from '../images/grooming.jpg'
+
 
 const ServicePage = () => {
   const history = useHistory();
