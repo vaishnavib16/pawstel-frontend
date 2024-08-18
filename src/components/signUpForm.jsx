@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import axios from 'axios';
 
 const SignUpForm = () => {
   const [formData, setFormData] = useState({
+    username:"",
     firstName: "",
     lastName: "",
     email: "",
-    mobile: "",
-    country: "",
-    state: "",
-    city: "",
-    pinCode: "",
+    phone: "",
+    address:"",
     password: "",
     confirmPassword: "",
     isChecked: false,
@@ -22,14 +21,12 @@ const SignUpForm = () => {
   const validate = () => {
     let errors = {};
 
+    if (!formData.username.trim()) errors.username = "username name is required";
     if (!formData.firstName.trim()) errors.firstName = "First name is required";
     if (!formData.lastName.trim()) errors.lastName = "Last name is required";
     if (!formData.email.trim()) errors.email = "Email is required";
-    if (!formData.mobile.trim()) errors.mobile = "Mobile number is required";
-    if (!formData.country.trim()) errors.country = "Country is required";
-    if (!formData.state.trim()) errors.state = "State is required";
-    if (!formData.city.trim()) errors.city = "City is required";
-    if (!formData.pinCode.trim()) errors.pinCode = "Pin code is required";
+    if (!formData.phone.trim()) errors.phone = "Phone number is required";
+    if (!formData.address.trim()) errors.address = "Address is required";
     if (!formData.password.trim()) errors.password = "Password is required";
     if (formData.password !== formData.confirmPassword)
       errors.confirmPassword = "Passwords do not match";
@@ -47,21 +44,61 @@ const SignUpForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length === 0) {
-      console.log("User registered successfully!");
-      history.push("/login");
+      try {
+        const url = 'http://localhost:7070/users/signup'; // Replace with your API URL
+        const response = await axios.post(url, {
+          username: formData.username,
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
+          phone: formData.phone,
+          address: formData.address,
+          password: formData.password,
+        });
+        const jwtToken = response.data.jwt;
+        localStorage.setItem('token', jwtToken);
+        history.push('/login');
+      } catch (error) {
+        setErrors({ submit: 'An error occurred. Please try again.' });
+        console.error('Error:', error);
+      } finally {
+        console.log('Final')
+      }
     } else {
       setErrors(validationErrors);
     }
+    //   console.log("User registered successfully!");
+    //   history.push("/login");
+    // } else {
+    //   setErrors(validationErrors);
+    // }
   };
+
+
+  // const handleSignUpClick = () => {
+  //   console.log("User registered successfully!");
+  //   history.push("/login"); // Redirect to the sign-up page
+  // };
 
   return (
     <div style={styles.container}>
       <h2 style={styles.title}>Sign Up</h2>
       <form onSubmit={handleSubmit} style={styles.form}>
+      <div style={styles.inputGroup}>
+          <label style={styles.label}>Username</label>
+          <input
+            type="text"
+            name="username"
+            value={formData.username}
+            onChange={handleChange}
+            style={styles.input}
+          />
+          {errors.username && <p style={styles.error}>{errors.username}</p>}
+        </div>
         <div style={styles.inputGroup}>
           <label style={styles.label}>First Name</label>
           <input
@@ -96,60 +133,30 @@ const SignUpForm = () => {
           {errors.email && <p style={styles.error}>{errors.email}</p>}
         </div>
         <div style={styles.inputGroup}>
-          <label style={styles.label}>Mobile Number</label>
+          <label style={styles.label}>Phone Number</label>
           <input
             type="text"
-            name="mobile"
-            value={formData.mobile}
+            name="phone"
+            value={formData.phone}
             onChange={handleChange}
             style={styles.input}
           />
-          {errors.mobile && <p style={styles.error}>{errors.mobile}</p>}
+          {errors.phone && <p style={styles.error}>{errors.phone}</p>}
         </div>
         <div style={styles.inputGroup}>
-          <label style={styles.label}>Country</label>
+          <label style={styles.label}>Address</label>
           <input
             type="text"
-            name="country"
-            value={formData.country}
+            name="address"
+            value={formData.address}
             onChange={handleChange}
             style={styles.input}
           />
-          {errors.country && <p style={styles.error}>{errors.country}</p>}
+          {errors.country && <p style={styles.error}>{errors.address}</p>}
         </div>
-        <div style={styles.inputGroup}>
-          <label style={styles.label}>State</label>
-          <input
-            type="text"
-            name="state"
-            value={formData.state}
-            onChange={handleChange}
-            style={styles.input}
-          />
-          {errors.state && <p style={styles.error}>{errors.state}</p>}
-        </div>
-        <div style={styles.inputGroup}>
-          <label style={styles.label}>City</label>
-          <input
-            type="text"
-            name="city"
-            value={formData.city}
-            onChange={handleChange}
-            style={styles.input}
-          />
-          {errors.city && <p style={styles.error}>{errors.city}</p>}
-        </div>
-        <div style={styles.inputGroup}>
-          <label style={styles.label}>Pin Code</label>
-          <input
-            type="text"
-            name="pinCode"
-            value={formData.pinCode}
-            onChange={handleChange}
-            style={styles.input}
-          />
-          {errors.pinCode && <p style={styles.error}>{errors.pinCode}</p>}
-        </div>
+        
+        
+        
         <div style={styles.inputGroup}>
           <label style={styles.label}>Password</label>
           <input

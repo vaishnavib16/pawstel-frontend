@@ -2,10 +2,7 @@
   {
     "id": 1,
     "title": "GROOMING",
-    "images": [
-      "../images/pawstel-logo.jpeg",
-      "grooming2.jpg"
-    ],
+    "image": "grooming.jpg",
     "info": "Grooming is essential for the health and well-being of your pets...",
     "highlights": [
       "Regular brushing",
@@ -21,10 +18,7 @@
   {
     "id": 2,
     "title": "SPA",
-    "images": [
-      "spa1.jpg",
-      "spa2.jpg"
-    ],
+    "image": "spa.jpg",
     "info": "Our pet spa offers a relaxing experience for your pets...",
     "highlights": [
       "Massage therapy",
@@ -40,10 +34,7 @@
   {
     "id": 3,
     "title": "Haircut",
-    "images": [
-      "spa1.jpg",
-      "spa2.jpg"
-    ],
+    "image": "haircut.jpg",
     "info": "Our pet spa offers a relaxing experience for your pets...",
     "highlights": [
       "Massage therapy",
@@ -59,10 +50,7 @@
   {
     "id": 4,
     "title": "dogwalk",
-    "images": [
-      "spa1.jpg",
-      "spa2.jpg"
-    ],
+    "image": "dogwalk.jpg",
     "info": "Our pet spa offers a relaxing experience for your pets...",
     "highlights": [
       "Massage therapy",
@@ -78,9 +66,7 @@
   {
     "id": 5,
     "title": "HOSTEL BOOKING",
-    "images": [
-      "grooming1.jpg"
-    ],
+    "image": "hostel.jpg",
     "info": "Grooming is essential for the health and well-being of your pets...",
     "highlights": [
       "Regular brushing",

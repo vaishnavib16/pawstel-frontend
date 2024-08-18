@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './PetForm.css';
 import axios from 'axios';
 
@@ -13,6 +13,15 @@ const PetForm = () => {
     const [loading, setLoading] = useState(false);
     const [successMessage, setSuccessMessage] = useState('');
     const [errors, setErrors] = useState({});
+
+    useEffect(( )=> {
+ 
+        
+        let user=JSON.parse(localStorage.getItem('user'))
+        setFormData({id:user.id})
+
+    },[])
+
 
     const validate = () => {
         const errors = {};

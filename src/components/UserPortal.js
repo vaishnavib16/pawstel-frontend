@@ -9,9 +9,11 @@ import Navbar8 from './navbar8';
 import Footer4 from './footer4';
 
 
+
+
 const UserPortal = () => {
     return (
-        <>
+        
             <div style={{ backgroundColor: '#FFF3C7' }}>
             <Navbar8 />
             <div className="card-container">
@@ -23,7 +25,7 @@ const UserPortal = () => {
             <BookingForm />
             <Footer4/>
             </div>
-        </>
+        
     );
 };
 

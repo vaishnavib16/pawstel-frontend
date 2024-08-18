@@ -11,7 +11,7 @@ const LoginForm = () => {
   const validate = () => {
     let errors = {};
     if (!email.trim()) {
-      errors.email = "Username is required";
+      errors.email = "Email is required";
     }
     if (!password) {
       errors.password = "Password is required";
@@ -23,29 +23,32 @@ const LoginForm = () => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length === 0) {
-      // Logic to handle login goes here
       try {
         const url = 'http://localhost:7070/users/signin'; // Replace with your API URL
         const response = await axios.post(url, {
           email,
           password
         });
-        const jwtToken = response.data.jwt;
+
+        const jwtToken = response.data.jwtToken;
         localStorage.setItem('token', jwtToken);
+        localStorage.setItem('user', JSON.stringify(response.data));
         history.push('/userportal');
       } catch (error) {
-        setErrors({ submit: 'An error occurred. Please try again.' });
+        if (error.response && error.response.status === 401) {
+          // Handle invalid credentials
+          setErrors({ submit: 'Invalid email or password. Please try again.' });
+        } else {
+          setErrors({ submit: 'An error occurred. Please try again.' });
+        }
         console.error('Error:', error);
       } finally {
-        console.log('Final')
+        console.log('Final');
       }
     } else {
       setErrors(validationErrors);
     }
   };
-
-
-
 
   const handleSignUpClick = () => {
     history.push("/signup"); // Redirect to the sign-up page
@@ -56,7 +59,7 @@ const LoginForm = () => {
       <form onSubmit={handleLoginSubmit} style={styles.form}>
         <h2 style={styles.title}>Login</h2>
         <div style={styles.inputGroup}>
-          <label style={styles.label}>Username</label>
+          <label style={styles.label}>Email</label>
           <input
             type="text"
             value={email}
@@ -75,6 +78,7 @@ const LoginForm = () => {
           />
           {errors.password && <p style={styles.error}>{errors.password}</p>}
         </div>
+        {errors.submit && <p style={styles.error}>{errors.submit}</p>}
         <button type="submit" style={styles.button}>
           Sign In
         </button>
